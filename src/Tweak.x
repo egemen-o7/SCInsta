@@ -62,16 +62,16 @@ BOOL dmVisualMsgsViewedButtonEnabled = false;
             [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"keep_deleted_message"];
 
             // Display settings modal on screen
-            NSLog(@"[SCInsta] Displaying SCInsta first-time settings modal");
+           
+        }
+
+    }
+ NSLog(@"[SCInsta] Displaying SCInsta first-time sex modal");
             UIViewController *rootController = [[self window] rootViewController];
             SCISettingsViewController *settingsViewController = [SCISettingsViewController new];
             UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:settingsViewController];
             
             [rootController presentViewController:navigationController animated:YES completion:nil];
-        }
-
-    }
-
     NSLog(@"[SCInsta] Cleaning cache...");
     [SCIManager cleanCache];
 
