@@ -25,6 +25,7 @@
 %hook IGDirectInboxViewController
 - (void)_didTapNewMessageBarButtonItem:(id)arg1 {
      NSLog(@"[SCInsta] Tweak settings gesture activated");
+    NSLog(@"[+] IGDirectInboxViewController -> _didTapNewMessageBarButtonItem: called!");
 
     UIViewController *rootController = [[UIApplication sharedApplication] delegate].window.rootViewController;
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[SCISettingsViewController new]];
